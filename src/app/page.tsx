@@ -8,7 +8,7 @@ export default function Page() {
     "iconName": "Tas"
   }
   return (
-    <h1 className="text-blue-600 text-3xl font-bold">
+    <h1 className="text-red-600 text-3xl font-bold underline">
       Test
     </h1>
   )
