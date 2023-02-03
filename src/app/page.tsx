@@ -8,8 +8,12 @@ export default function Page() {
     "iconName": "Tas"
   }
   return (
-    <h1 className="text-red-600 text-3xl font-bold underline">
-      Test
-    </h1>
+    <div>
+      <h1>
+        Section Banner
+        Section All Product
+      </h1>
+      {/* @ts-expect-error Server Component */}
+    </div>
   )
 }
