@@ -28,6 +28,11 @@ export default function Page() {
   ];
   return (
     <div>
+      <h1>
+        Section Banner
+        Section All Product
+      </h1>
+      {/* @ts-expect-error Server Component */}
       <CategoryProduct categories={data} />
     </div>
   )
