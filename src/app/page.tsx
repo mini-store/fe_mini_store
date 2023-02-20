@@ -2,6 +2,7 @@ import "./styles/globals.css";
 import CardProduct from "../app/components/atoms/cardProduct";
 import linkIcon from "../../assets/icons/tas.png";
 import CategoryProduct from "../app/components/molecules/categoryProduct";
+import Link from "next/link";
 
 export default function Page() {
   const data = [
@@ -34,6 +35,7 @@ export default function Page() {
       </h1>
       {/* @ts-expect-error Server Component */}
       <CategoryProduct categories={data} />
+      <Link href="/listProducts">See More</Link>
     </div>
   )
 }
