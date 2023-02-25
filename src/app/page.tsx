@@ -1,7 +1,6 @@
-import "./styles/globals.css";
-import CardProduct from "../app/components/atoms/cardProduct";
-import linkIcon from "../../assets/icons/tas.png";
-import CategoryProduct from "../app/components/molecules/categoryProduct";
+import './styles/globals.css';
+import CardProduct  from "../app/components/atoms/cardProduct";
+import linkIcon from '../../assets/icons/tas.png';
 
 export default function Page() {
   const data = [
@@ -27,8 +26,10 @@ export default function Page() {
     },
   ];
   return (
-    <div>
-      <CategoryProduct categories={data} />
-    </div>
+    <section>
+      <div className='max-w-[1210px] m-auto grid'>
+        <CardProduct/>
+      </div>
+    </section>
   )
 }
