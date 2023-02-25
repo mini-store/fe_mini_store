@@ -1,6 +1,7 @@
 import './styles/globals.css';
 import CardProduct  from "../app/components/atoms/cardProduct";
 import linkIcon from '../../assets/icons/tas.png';
+import Banner from './components/homepage_section/Banner-1';
 
 export default function Page() {
   const data = {
@@ -8,12 +9,11 @@ export default function Page() {
     "iconName": "Tas"
   }
   return (
-    <div>
-      <h1>
-        Section Banner
-        Section All Product
-      </h1>
+    <section>
+      <div className='max-w-[1210px] m-auto grid'>
+        <CardProduct/>
+      </div>
       {/* @ts-expect-error Server Component */}
-    </div>
+    </section>
   )
 }
